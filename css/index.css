@@ -1,0 +1,424 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.black-nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    line-height: 50px;
+}
+.wrap{
+    width: 1300px;
+    float: left;
+    margin: 0 60px;
+}
+.black-nav-left{
+    float: left;
+}
+.black-nav-right{
+    float: right;
+}
+.black-nav-left li,.black-nav-right li{
+float:  left;
+list-style: none;
+}
+.wrap a{
+    color: azure;
+    text-decoration: none;
+}
+li>span{
+    color: beige;
+    margin: 0 10px;
+}
+
+/* 白色导航栏 */
+.white-nav{
+    width: 100%;;
+    height: 100px;
+    background-color: #ffffff;
+    line-height: 150px;
+}
+.wrap{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    float: left;
+    margin: 10px 10px;
+
+}
+.wrap .logo img{
+margin-left: 30px;
+margin-top: 30px;
+}
+
+.nav-bar li{
+    float: left;
+    list-style: none;
+    margin: 0 5px;
+   
+}
+.nav-bar a{
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search{
+    float: right;
+}
+
+/* 菜单栏开始 */
+.menu-nav{
+    width: 100%;
+    height: 460px;
+    margin: 30px 30px
+}
+.menu-nav .wrap{
+    position: relative;
+}
+
+.menu-left{
+    position: absolute;
+    left: 0;
+    width: 234px;
+    height: 420px;
+    padding: 20px 0;
+    background-color: rgb(83, 23, 3);
+}
+.menu-left li{
+     position: relative;
+     top: 20px;
+     line-height: 40px;
+     list-style: none;
+}
+.menu-left a{
+    margin: 0 30px;
+    word-spacing: 20px;
+    text-align: center;
+}
+.menu-left ul li:hover{
+   
+    background-color:coral;
+}
+
+
+.menu-left  span{
+    float: right;
+
+}
+.banner-box{
+    width: 1226px;
+    height: 460px;
+}
+.banner-box img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.banner-box .active{
+    opacity: 1;
+}
+.banner-box .next{
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 90px;
+    font-size: 40px;
+    color:white;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.banner-box .pre {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 240px;
+    font-size: 40px;
+   z-index: 1;
+   color:white;
+    /* border: 1px solid red; */
+    cursor: pointer;
+  }
+
+
+  /* div盒子模型 */
+  .box-four{
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+  }
+  .box-four{
+    position: relative;
+    left: 20px;
+    
+  }
+.box-four .last{
+    padding-left: 12px;
+  width: 280px;
+}
+  .one{
+    display: flex;
+    width: 260px;
+    height: 150px;
+    background-color: beige;
+  }
+  .one li{
+    list-style: none;
+    font-size: 13px;
+    width: 30%;
+    float: left;
+   text-align: center;
+   padding-top: 10px;
+   line-height: 30px;
+   border: 2px solid white;
+
+  }
+  .last{
+
+    margin: 10px;
+  }
+/* 大米明星单品 */
+  .star{
+    width:100%;
+    height: 500px;
+    position: relative;
+    left: 10px;
+  }
+  .star p{
+    display: flex;
+    float: left;
+    position: relative;
+    left: 80px;
+    color: black;
+    z-index: 1;
+    margin: 5px;
+  }
+  .picture{
+    float: left;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    left: -130px;
+    margin-top: 30px;
+  }
+  .picture li{
+    list-style: none;
+  }
+ .item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    margin-left: 100px;
+ }
+.picture img{
+    width: 150px;
+    height: 150px;
+   
+}
+.picture .picture-one{
+    border-top: 1px solid red
+}
+
+.picture .picture-two{
+    border-top: 1px solid blue
+}
+
+.picture .picture-three{
+    border-top: 1px solid burlywood
+}
+
+.picture .picture-four{
+    border-top: 1px solid pink
+}
+
+.picture .picture-five{
+    border-top: 1px solid cornflowerblue
+}
+
+
+/* 智能硬件 */
+.container-two{
+    width: 85%;
+    background-color:rgb(245, 245, 245);
+    height: 700px;
+    margin-left: 60px;
+    margin-top: -80px;
+}
+.all{
+  width: 1200px;
+  margin-top: 100px;
+  position: relative;
+  left: 50px;
+
+}
+.pic{
+    float: left;
+    margin:10px 10px;
+    width: 16%;
+}
+.item-one{
+    margin:-50px 30px;
+    position: relative;
+    left: 60px;
+}
+.container-two .move{
+  
+  position: relative;
+  left: 90px;
+  top: 30px;
+  font-size: 20px;
+}
+
+/* 服务 */
+.container-three{
+    display: flex;
+    width: 100%;
+}
+
+.server{
+    display: flex;
+    margin-left: 150px;
+}
+.one-one li{
+    float: left;
+    list-style: none;
+    margin:20px 30px
+}
+.one-one span{
+    margin-left: 50px;
+    color: black;
+}
+
+.support{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.two-two{
+    display:flex ;
+}
+.support-left{
+    display:flex ;
+    margin-left: 150px;
+   
+}
+.support-left ul{
+    margin-left: 30px;
+}
+.support-left .color-text{
+    color: black;
+   }
+.support-left li{
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    list-style:none;
+    color:gray;
+}
+
+.support-right{
+    display: flex;
+    position: relative;
+    left: 300px;
+}
+.support-right ul{
+   
+}
+.support-right li{
+    list-style: none;
+   margin-top: 10px;
+}
+.support-right .nihao{
+    border: 2px solid salmon;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color:tomato;
+}
+.link-top {
+    width: 50px;
+    height: 60%;
+    border-right: solid 2px gray;
+    margin: 20px;
+    position: relative;
+    left: 230px;
+}
+
+
+.nav-last{
+    width: 85%;
+    height: 100px;
+    background-color: aliceblue;
+    margin-left: 70px;
+   
+}
+.last-one{
+    display: flex;
+    
+    
+}
+.last-one li{
+    margin-left: 5px;
+    float: left;
+    list-style: none;
+}
+.last-one a{
+    font-size: 10px;
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+.last-one span{
+    padding: 0 -20px;
+    position: relative;
+    
+    color: black;
+}
+.last-one-one{
+    background-color: tomato;
+    margin-left: 20px;
+}
+.last-one p{
+    display: flex;
+    position: relative;
+    right: 810px;
+    top: 30px;
+}
+.all-all{
+    margin-left: 50px;
+}
+
+.menu-left ul li {
+    position: relative;
+}
+.submenu a{
+    color: black;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-left ul li .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color:antiquewhite !important;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menu-left ul li:hover .submenu {
+    display: block;
+}
+
